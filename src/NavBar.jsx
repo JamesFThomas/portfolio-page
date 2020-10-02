@@ -2,11 +2,10 @@ import React from 'react';
 import {
   MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink,
   } from "mdbreact";
-  import { BrowserRouter as Router } from 'react-router-dom';
 
-function NavBar() {
+  function NavBar() {
   return (
-  <MDBNavbar color="indigo" dark expand="md">
+  <MDBNavbar color="indigo" >
       <MDBNavbarBrand>
         <strong className="white-text">James F. Thomas</strong>
       </MDBNavbarBrand>
