@@ -1,3 +1,6 @@
+// const Dotenv = require('dotenv-webpack');
+const path = require('path');
+
 module.exports = {
   entry: './src/index.jsx',
   output: {
@@ -23,7 +26,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpe?g|gif|pdf)$/i,
+        test: /\.(png|svg|jpg|gif|wav|mp3|eot|ttf|woff|woff2|pdf)$/i,
         use: [
           {
             loader: 'file-loader',
@@ -32,16 +35,26 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: [{ loader: 'style-loader', options: { injectType: 'styleTag' } }, 'css-loader',],
       },
-      {
-        test: /\.css$/,
-        loader: 'css-loader',
-        query: {
-          modules: true,
-          localIdentName: '[name]__[local]___[hash:base64:5]'
-        }
-      }
+      // {
+      //   test: /\.css$/i,
+      //   loader: 'css-loader',
+      //   options: {
+      //     modules: {
+      //       compileType: 'module',
+      //       mode: 'local',
+      //       auto: true,
+      //       exportGlobals: true,
+      //       localIdentName: '[path][name]__[local]--[hash:base64:5]',
+      //       localIdentContext: path.resolve(__dirname, 'src'),
+      //       localIdentHashPrefix: 'my-custom-hash',
+      //       namedExport: true,
+      //       exportLocalsConvention: 'camelCase',
+      //       exportOnlyLocals: false,
+      //     },
+      //   },
+      // }
     ]
   }
 }

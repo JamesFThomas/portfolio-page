@@ -18,7 +18,7 @@ function App() {
   <BrowserRouter>
     <NavBar />
     <div className="router-container">
-      <Switch>
+    <Switch>
       <Route path="/contact">
         <Contact />
       </Route>
