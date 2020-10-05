@@ -6,7 +6,7 @@ function Splash() {
   const myName = 'James F. Thomas';
   const myRoles = 'JavaScript Developer * Martial Artist * Girevik * Horticulturalist'
   return (
-    <div style={{ margin: 'auto', textAlign: 'center'}}>
+    <div style={{ marginTop: '60px', marginBottom: '60px', textAlign: 'center'}}>
       <img src={James} alt="James Picture" style={{borderRadius:'50%'}}/>
         <h1>{myName}</h1>
         <p>{myRoles}</p>
