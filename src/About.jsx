@@ -6,7 +6,7 @@ import Jmaes2 from './assets/jamesfthomas2.jpg';
 function About() {
   const myName = 'James F. Thomas';
   const aboutTitle = "";
-  
+
 
   return (
     <Container >
