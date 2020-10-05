@@ -1,29 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
-  MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink,
-  } from "mdbreact";
+    Nav, Navbar
+  } from 'react-bootstrap';
+
 
   function NavBar() {
   return (
-  <MDBNavbar color="indigo" >
-      <MDBNavbarBrand>
-        <strong className="white-text">James F. Thomas</strong>
-      </MDBNavbarBrand>
-        <MDBNavbarNav left>
-          <MDBNavItem>
-            <MDBNavLink to="/">Home</MDBNavLink>
-          </MDBNavItem>
-          <MDBNavItem>
-            <MDBNavLink to="/about">About</MDBNavLink>
-          </MDBNavItem>
-          <MDBNavItem>
-            <MDBNavLink to="/resume">Resume</MDBNavLink>
-          </MDBNavItem>
-          <MDBNavItem>
-            <MDBNavLink to="/portfolio">Portfolio</MDBNavLink>
-          </MDBNavItem>
-        </MDBNavbarNav>
-  </MDBNavbar>
+    <Navbar className="navbar navbar-expand-lg" bg="dark">
+      <Nav>
+        <Navbar.Brand>
+         James F. Thomas
+        </Navbar.Brand>
+      </Nav>
+      <Nav className="mr-auto">
+        <Link to="/">
+          Home
+        </Link>
+        <Link to="/about">
+          About
+        </Link>
+        <Link to="/resume" >
+          Resume
+        </Link>
+        <Link to="/portfolio" >
+           Portfolio
+        </Link>
+      </Nav>
+  </Navbar>
   );
 }
 
