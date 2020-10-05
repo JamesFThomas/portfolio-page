@@ -11,7 +11,7 @@ function Portfolio() {
       <Row >
         <Col sm={6} >
           <Card>
-            <Card.Header><h3>Game Time</h3></Card.Header>
+            <Card.Header><h3>GameTime</h3></Card.Header>
               <Card.Img variant="top" src={Project1} style={{ width: "100%", height: '100%' }}/>
             <Card.Body>
               <Card.Text>
