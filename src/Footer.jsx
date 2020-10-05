@@ -1,12 +1,12 @@
 import React from 'react';
-import { MDBContainer, MDBFooter, MDBIcon} from "mdbreact";
+import { Container, Footer} from "mdbreact";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function Footer() {
+function FooterComp() {
   return (
-    <MDBFooter color="blue" >
+    <Footer color="blue" >
       <div className="text-center py-3 mx-auto d-block">
-        <MDBContainer >
+        <Container >
         <a href="https://github.com/JamesFThomas" className="">
           <FontAwesomeIcon icon={['fab', 'github']} />
         </a>
@@ -16,15 +16,15 @@ function Footer() {
         <a href="https://dev.to/jamesfthomas" className="">
           <FontAwesomeIcon icon={['fab', 'dev']} />
         </a>
-      </MDBContainer>
+      </Container>
       </div>
       <div className="footer-copyright text-center py-3">
-        <MDBContainer >
+        <Container >
         Copyright &copy; James F. Thomas {new Date().getFullYear()}.
-        </MDBContainer>
+        </Container>
       </div>
-    </MDBFooter>
+    </Footer>
   );
 }
 
-export default Footer;
+export default FooterComp;

@@ -9,7 +9,7 @@ import Resume from './Resume.jsx';
 import Portfolio from './Portfolio.jsx';
 import Splash from './Splash.jsx';
 import NavBar from './NavBar.jsx';
-import Footer from './Footer.jsx';
+import FooterComp from './Footer.jsx';
 
 library.add(fab);
 
@@ -36,7 +36,7 @@ function App() {
       </Route>
     </Switch>
     </div>
-    <Footer />
+    <FooterComp />
 </BrowserRouter>
   );
 }
