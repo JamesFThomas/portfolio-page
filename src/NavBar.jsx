@@ -7,24 +7,24 @@ import { Nav, Navbar, Container, Row, Col } from 'react-bootstrap';
   function NavBar() {
   return (
     <Navbar>
-      <Container className="text-center py-3 mx-auto ">
-        <Row className="d-inline p-2 m-1 text-white">
-          <Col>
+      <Container >
+        <Row>
+          <Col sm={4}>
             <Link to="/">
-              <h4> James. F. Thomas </h4>
+              <h4> James F. Thomas </h4>
             </Link>
           </Col>
-          <Col>
+          <Col sm={4}>
             <Link to="/about">
               <h4> About </h4>
             </Link>
           </Col>
-          <Col>
+          <Col sm={4}>
             <Link to="/resume" >
               <h4> Resume </h4>
             </Link>
           </Col>
-          <Col>
+          <Col sm={4}>
             <Link to="/portfolio" >
               <h4> Portfolio </h4>
             </Link>
