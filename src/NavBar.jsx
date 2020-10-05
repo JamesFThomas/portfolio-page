@@ -5,8 +5,8 @@ import { Navbar, Container, Row, Col } from 'react-bootstrap';
 
   function NavBar() {
   return (
-    <Navbar>
-      <Container style={{width: "80%"}}>
+    <Navbar style={{marginTop: "20px", marginBottom: "30px" }}>
+      <Container>
         <Row className="text-center mx-auto">
           <Col sm={3}>
             <Link to="/">

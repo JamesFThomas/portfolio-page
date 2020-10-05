@@ -7,7 +7,7 @@ function Portfolio() {
   const greeting = 'Portfolio Page';
 
   return (
-    <Container>
+    <Container style={{ marginTop: '60px', marginBottom: '60px'}}>
       <Row >
         <Col sm={6} >
           <Card>

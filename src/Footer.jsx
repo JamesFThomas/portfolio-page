@@ -4,25 +4,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function FooterComp() {
   return (
-    <Footer color="blue" >
-      <div className="text-center py-3 mx-auto d-block">
-        <Container >
-        <a href="https://github.com/JamesFThomas" className="">
-          <FontAwesomeIcon icon={['fab', 'github']} />
+    <Footer style={{marginTop: "30px", marginBottom: "30px" }}>
+      <Container className="text-center" >
+        <a href="https://github.com/JamesFThomas" style={{padding: "10px" }}>
+          <FontAwesomeIcon icon={['fab', 'github']} size = '3x'/>
         </a>
-        <a href="https://www.linkedin.com/in/james-thomas-396a24137/" className="">
-          <FontAwesomeIcon icon={['fab', 'linkedin']} />
+        <a href="https://www.linkedin.com/in/james-thomas-396a24137/" style={{padding: "10px" }}>
+          <FontAwesomeIcon icon={['fab', 'linkedin']} size = '3x'/>
         </a>
-        <a href="https://dev.to/jamesfthomas" className="">
-          <FontAwesomeIcon icon={['fab', 'dev']} />
+        <a href="https://dev.to/jamesfthomas" style={{padding: "10px" }}>
+          <FontAwesomeIcon icon={['fab', 'dev']} size = '3x'/>
         </a>
       </Container>
-      </div>
-      <div className="footer-copyright text-center py-3">
-        <Container >
-        Copyright &copy; James F. Thomas {new Date().getFullYear()}.
+      <Container className="text-center">
+          <h4>
+            Copyright &copy; James F. Thomas {new Date().getFullYear()}.
+          </h4>
         </Container>
-      </div>
     </Footer>
   );
 }
