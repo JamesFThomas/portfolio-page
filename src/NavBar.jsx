@@ -8,7 +8,7 @@ import { Navbar, Container, Row, Col } from 'react-bootstrap';
     <Navbar style={{marginTop: "20px", marginBottom: "30px" }}>
       <Container>
         <Row className="text-center mx-auto">
-          <Col sm={3}>
+          <Col sm={4}>
             <Link to="/">
               <h4> James F. Thomas </h4>
             </Link>
