@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Container, Row, Col } from 'react-bootstrap';
+import "./css/NavBar.css"
 
 
   function NavBar() {
   return (
-    <Navbar style={{marginTop: "20px", marginBottom: "30px" }}>
-      <Container>
-        <Row className="text-center mx-auto">
+    <Navbar className="navbar-page">
+      <Container className="navbar-container">
+        <Row className="navbar-content">
           <Col sm={4}>
             <Link to="/">
               <h4> James F. Thomas </h4>

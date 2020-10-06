@@ -1,0 +1,17 @@
+/* NavBar Page CSS */
+
+.navbar-page{
+  text-align: center;
+  padding: 30px 30px;
+  background-color: darkgrey;
+}
+
+.navbar-container{
+  
+}
+
+.navbar-content{
+  text-align: center;
+  width: 100%;
+}
+
