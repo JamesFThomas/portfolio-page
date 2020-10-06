@@ -12,6 +12,9 @@ module.exports = {
     contentBase: './build'
   },
   devtool: 'eval-source-map',
+  node: {
+    fs: 'empty'
+  },
   mode: 'development',
   module: {
     rules: [
