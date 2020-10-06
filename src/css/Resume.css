@@ -1,0 +1,14 @@
+/* Resume Page CSS */
+
+.resume-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.resume-content{
+  width: 100%;
+  height: 100vh;
+}

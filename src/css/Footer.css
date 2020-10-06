@@ -1,0 +1,20 @@
+/* Footer Page CSS */
+
+.footer-page{
+  text-align: center;
+  padding: 20px 20px;
+  background-color: darkgrey;
+}
+
+.footer-content1{}
+
+.footer-hrElement{
+  width: 20%;
+  color: black;
+  background-color:black
+}
+.footer-icon{
+    padding: 10px 10px;
+  }
+
+.footer-content2{}

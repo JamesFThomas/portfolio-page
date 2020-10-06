@@ -1,0 +1,28 @@
+/* POrtfolio Page CSS */
+
+.port-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.port-content{
+  padding: 50px 0px;
+}
+
+.port-project1{}
+
+.port-project1-image{
+}
+
+.port-project1-button {}
+
+.port-project2{}
+
+.port-project2-image{
+
+}
+
+.port-project2-button{}

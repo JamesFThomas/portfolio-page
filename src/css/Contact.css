@@ -1,0 +1,16 @@
+/* Contact Page CSS */
+
+.contact-page{
+  display: flex;
+  margin: 30px 30px;
+}
+
+.contact-content{
+  padding: 90px 50px 90px 50px;
+  width: 100%;
+  border: 2px solid gray;
+  border-radius: 5%;
+  background-color: lightslategrey;
+}
+
+

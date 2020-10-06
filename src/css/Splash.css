@@ -1,0 +1,33 @@
+/* Splash Page Elements */
+
+.splash-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  background-color: lightblue;
+}
+
+.splash-content{
+  padding: 150px 0px;
+}
+
+.splash-image{
+  border-radius: 50%;
+}
+
+.splash-myName{
+
+}
+
+.splash-hrElement{
+  width: 100%;
+  color: black;
+  background-color: black;
+
+}
+
+.splash-myRoles{
+
+}

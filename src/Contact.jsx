@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Form, Col, Container, Button } from 'react-bootstrap';
 import axios from 'axios';
-// const dotenv = require('dotenv').config();
 require('dotenv').config();
+import "./css/Contact.css"
 
 
 function Contact() {
@@ -39,37 +39,38 @@ function Contact() {
 
 
   return (
-    <Container style={{ marginTop: '60px', marginBottom: '60px'}}>
+  <div className="contact-page">
+    <Container className="contact-content">
         <Form onSubmit={contactMe}>
         <Form.Group>
           <Form.Row>
-            <Col sm={5}>
-              <Form.Label>First Name</Form.Label>
+            <Col sm={6}>
+              <Form.Label >First Name</Form.Label>
               <Form.Control type="text" name="firstName" value={state.firstName} onChange={contactValue} placeholder="Tyrone" />
               <br></br>
             </Col>
-            <Col sm={5}>
+            <Col sm={6}>
               <Form.Label>Last Name</Form.Label>
               <Form.Control type="text" name="lastName" value={state.lastName} onChange={contactValue} placeholder="Jackson" />
               <br></br>
             </Col>
           </Form.Row>
           <Form.Row>
-            <Col sm={10}>
+            <Col sm={12}>
               <Form.Label>Email</Form.Label>
               <Form.Control type="email" name="email" value={state.email} onChange={contactValue} placeholder="TyroneJacskson@gmail.com" />
               <br></br>
             </Col>
           </Form.Row>
           <Form.Row>
-            <Col sm={10}>
+            <Col sm={12}>
               <Form.Label>Message</Form.Label>
               <Form.Control as="textarea" name="message" value={state.message} onChange={contactValue} rows="5" placeholder="I am interesting in hiring you for a wonderful opportunity........" />
               <br></br>
             </Col>
           </Form.Row>
           <Form.Row>
-            <Col sm={10}>
+            <Col sm={12}>
               <Button type="submit" variant="primary" size="lg">Contact James</Button>
               <br></br>
            </Col>
@@ -82,6 +83,7 @@ function Contact() {
           </p>
         )}
     </Container>
+  </div>
    );
 }
 
