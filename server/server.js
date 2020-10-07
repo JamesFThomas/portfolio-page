@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const port = 8080;
 const transporter = require('./config');
+const nodemailer = require('nodemailer');
 const app = express();
 
 
@@ -13,12 +14,19 @@ app.use("/", express.static(path.join(__dirname, "../build")));
 app.use('*', express.static(path.join(__dirname, "../build/index.html")));
 
 app.post("/send", (req, res)=>{
-  try {
+  // console.log("****form data****", req.body);
+    const {name, email, subject, message} = req.body;
+    const fullEmail = `
+      <b>from:</b> ${name},<br>
+      <b>email:</b> ${email},<br>
+      <b>message:</b><br>
+      ${message}
+      `
     const mailOptions = {
-      from: req.body.email,
+      from: name,
       to: process.env.EMAIL,
-      subject: req.body.subject,
-      html: req.body.message
+      subject: subject,
+      html: fullEmail
     };
 
     transporter.sendMail(mailOptions, function(err, info) {
@@ -34,12 +42,6 @@ app.post("/send", (req, res)=>{
         });
       }
     });
-  } catch (error) {
-    res.status(500).send({
-      success: false,
-      message: 'Something weird happened, hit me  back later'
-    });
-  }
 })
 
 

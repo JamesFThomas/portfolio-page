@@ -1,17 +1,28 @@
 /* NavBar Page CSS */
 
 .navbar-page{
-  text-align: center;
   padding: 30px 30px;
   background-color: darkgrey;
 }
 
+.navbar-brand{
+  margin-left: 10px;
+}
+
 .navbar-container{
-  
+  display: flex;
 }
 
 .navbar-content{
-  text-align: center;
   width: 100%;
 }
+
+
+.navbar-button1{}
+
+.navbar-button2{}
+
+.navbar-button3{}
+
+.navbar-button4{}
 
