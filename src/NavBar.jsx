@@ -1,38 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Container, Row, Col } from 'react-bootstrap';
+import { Navbar, Container, Row, Col, Button  } from 'react-bootstrap';
 import "./css/NavBar.css"
 
 
   function NavBar() {
   return (
     <Navbar className="navbar-page">
+      <Navbar.Brand className="navbar-brand" href="/home"><h3><em>James F. Thomas</em></h3></Navbar.Brand>
       <Container className="navbar-container">
         <Row className="navbar-content">
-          <Col sm={4}>
-            <Link to="/">
-              <h4> James F. Thomas </h4>
-            </Link>
+          <Col >
+            <Button href="/about" variant="secondary" size="lg" className="navbar-button1">
+              About
+            </Button>
           </Col>
-          <Col sm={2}>
-            <Link to="/about">
-              <h4>About</h4>
-            </Link>
+          <Col >
+            <Button href="/resume" variant="secondary" size="lg" className="navbar-button2">
+              Resume
+            </Button>
           </Col>
-          <Col sm={2}>
-            <Link to="/resume" >
-              <h4>Resume</h4>
-            </Link>
+          <Col >
+            <Button href="/portfolio" variant="secondary" size="lg" className="navbar-button3">
+              Portfolio
+            </Button>
           </Col>
-          <Col sm={2}>
-            <Link to="/portfolio" >
-              <h4>Portfolio</h4>
-            </Link>
-          </Col>
-          <Col sm={2}>
-            <Link to="/contact">
-              <h4>Contact</h4>
-            </Link>
+          <Col >
+            <Button href="/contact" variant="secondary" size="lg" className="navbar-button4">
+              Contact
+            </Button>
           </Col>
         </Row>
       </Container>

@@ -2,14 +2,14 @@
 
 .contact-page{
   display: flex;
-  margin: 30px 30px;
+  margin: 40px 40px;
 }
 
 .contact-content{
-  padding: 90px 50px 90px 50px;
+  padding: 50px 50px 50px 50px;
   width: 100%;
   border: 2px solid gray;
-  border-radius: 5%;
+  border-radius: 15%;
   background-color: lightslategrey;
 }
 

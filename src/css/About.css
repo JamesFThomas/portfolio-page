@@ -1,24 +1,42 @@
 /* About Page Styling */
 
-.about-container{
+.about-page{
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   vertical-align: middle;
   margin: 30px 30px;
+  height: 100%;
 }
 
 .about-content{
-  
+
+}
+
+.about-card{
+    max-height: fit-content;
+    background-color: lightslategrey;
+    border-radius: 15%;
 }
 
 .about-title{
 }
 
-.about-image{}
+.about-image{
+  max-width: 50%;
+  height: auto;
+  padding: 20px 0px 0px 0px;
+  align-self: center;
+}
 
-.about-text{}
+.about-text{
+
+}
+
+.about-text{
+
+}
 
 
 

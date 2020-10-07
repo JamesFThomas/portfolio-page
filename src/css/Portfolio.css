@@ -12,16 +12,27 @@
   padding: 50px 0px;
 }
 
-.port-project1{}
+.port-project1{
+  height: 100%;
+  background-color: lightslategrey;
+  border-radius: 15%;
+
+}
 
 .port-project1-image{
+  padding: 20px 10px;
 }
 
 .port-project1-button {}
 
-.port-project2{}
+.port-project2{
+  height: 100%;
+  background-color: lightslategrey;
+  border-radius: 15%;
+}
 
 .port-project2-image{
+  padding: 20px 10px;
 
 }
 

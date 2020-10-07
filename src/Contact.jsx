@@ -8,9 +8,9 @@ import "./css/Contact.css"
 function Contact() {
 
   const [state, setState] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
+    subject: '',
     message: ''
   });
 
@@ -21,7 +21,7 @@ function Contact() {
     axios.post("/send", { ...state })
       .then(response =>{
         setResult(response.data);
-        setState({ firstName: '', lastName: '', email: '', message: '' });
+        setState({ name: '', email: '', subject: '', message: '' });
       })
       .catch(() => {
         setResult({success: false, message: 'Something went wrong. Please try again later'});
@@ -40,39 +40,44 @@ function Contact() {
 
   return (
   <div className="contact-page">
-    <Container className="contact-content">
-        <Form onSubmit={contactMe}>
-        <Form.Group>
+    <Container className="contact-content col-md-6 offset-md-3">
+      <Form  onSubmit={contactMe}>
+        <Form.Group controlId="name">
           <Form.Row>
-            <Col sm={6}>
-              <Form.Label >First Name</Form.Label>
-              <Form.Control type="text" name="firstName" value={state.firstName} onChange={contactValue} placeholder="Tyrone" />
-              <br></br>
-            </Col>
-            <Col sm={6}>
-              <Form.Label>Last Name</Form.Label>
-              <Form.Control type="text" name="lastName" value={state.lastName} onChange={contactValue} placeholder="Jackson" />
-              <br></br>
+            <Col className="offset-md-2" sm={8}>
+              <Form.Label >Full Name</Form.Label>
+              <Form.Control type="text" name="name" value={state.name} onChange={contactValue} placeholder="Tyrone Jackson" />
             </Col>
           </Form.Row>
+        </Form.Group>
+        <Form.Group controlId="email">
           <Form.Row>
-            <Col sm={12}>
+            <Col className="offset-md-2" sm={8}>
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" name="email" value={state.email} onChange={contactValue} placeholder="TyroneJacskson@gmail.com" />
-              <br></br>
+              <Form.Control type="email" name="email" value={state.email} onChange={contactValue} placeholder="TyroneJackson@gmail.com" />
             </Col>
           </Form.Row>
+        </Form.Group>
+        <Form.Group controlId="subject">
           <Form.Row>
-            <Col sm={12}>
+            <Col className="offset-md-2" sm={8}>
+              <Form.Label >Subject</Form.Label>
+              <Form.Control type="text" name="subject" value={state.subject} onChange={contactValue} placeholder="Software Developer Position" />
+            </Col>
+          </Form.Row>
+        </Form.Group>
+        <Form.Group controlId="message">
+          <Form.Row>
+            <Col className="offset-md-2" sm={8}>
               <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" name="message" value={state.message} onChange={contactValue} rows="5" placeholder="I am interesting in hiring you for a wonderful opportunity........" />
-              <br></br>
+              <Form.Control as="textarea" name="message" value={state.message} onChange={contactValue} rows="5" placeholder="We would like you to join our team.." />
             </Col>
           </Form.Row>
+        </Form.Group>
+        <Form.Group controlId="contact">
           <Form.Row>
-            <Col sm={12}>
+            <Col className="offset-md-2">
               <Button type="submit" variant="primary" size="lg">Contact James</Button>
-              <br></br>
            </Col>
           </Form.Row>
         </Form.Group>

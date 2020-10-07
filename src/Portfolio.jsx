@@ -20,6 +20,7 @@ function Portfolio() {
                  The GameTime application is an online gaming platform focused on player and developer interactions our main goal is to allow
                  developers to host games and have players provide feedback to improve upon the game development process.
                </Card.Text>
+               <Card.Text>React.js | Node.js | Express.js | PostgreSQL | Discord API | GameSpot API | Google API </Card.Text>
               <Button className="port-project1-button" href="http://www.phaserbros.com/" variant="success" >phaserbros.com</Button>
             </Card.Body>
           </Card>
@@ -33,6 +34,7 @@ function Portfolio() {
                 The Trailr application provides users access to hiking trails in their area, as well as search-by-location functionality.
                 Trails load automatically as a user traverses to new areas within Google Maps.
               </Card.Text>
+              <Card.Text>React.js | Node.js | Express.js | Passport.js | MySQL | Google Maps API | Babel </Card.Text>
               <Button className="port-project2-button" href="http://trailr.org/" variant="success" >Trailr.org</Button>
             </Card.Body>
         </Card>
