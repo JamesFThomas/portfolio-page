@@ -1,7 +1,5 @@
 import React from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
-import James2 from './assets/jamesfthomas2.jpg';
-import James from './assets/jamesfthomas.jpg';
 import James3 from './assets/jamesfthomas3.jpg';
 import "./css/About.css";
 
