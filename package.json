@@ -1,7 +1,7 @@
 {
   "name": "portfolio-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Portfolio Page",
   "main": "./server/server.js",
   "engines": {
     "npm": "6.14.6",
@@ -44,6 +44,7 @@
     "font-awesome": "^4.7.0",
     "heroku": "^7.45.0",
     "heroku-cli": "^7.0.9",
+    "jquery": "^1.9.1",
     "lodash": "^4.17.20",
     "mdbreact": "^4.27.0",
     "nodemon": "^2.0.4",
