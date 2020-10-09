@@ -11,11 +11,11 @@ module.exports = {
   devServer: {
     contentBase: './build'
   },
-  devtool: 'eval-source-map',
+  // devtool: 'eval-source-map',
   node: {
     fs: 'empty'
   },
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
