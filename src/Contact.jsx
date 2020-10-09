@@ -24,7 +24,7 @@ function Contact() {
         setState({ name: '', email: '', subject: '', message: '' });
       })
       .catch(() => {
-        setResult({success: false, message: 'Something went wrong. Please try again later'});
+        setResult({success: false, message: 'Something went wrong. Please use LinkedIn icon below to ensure contact'});
       });
   }
 
