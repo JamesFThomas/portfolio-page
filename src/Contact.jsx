@@ -3,6 +3,7 @@ import { Form, Col, Container, Button } from 'react-bootstrap';
 import axios from 'axios';
 require('dotenv').config();
 import "./css/Contact.css"
+import emailjs from 'emailjs-com';
 
 
 function Contact() {
@@ -16,17 +17,37 @@ function Contact() {
 
   const [result, setResult] = useState(null);
 
+
+
   const contactMe = event => {
+
     event.preventDefault();
-    axios.post("/send", { ...state })
+
+    const {name, email, subject, message} = state;
+  
+      const emailContent = {
+        subject: subject,
+        name: name,
+        email: email,
+        message: message,
+        }
+
+    axios.get("/env", { ...state })
       .then(response =>{
-        setResult(response.data);
-        setState({ name: '', email: '', subject: '', message: '' });
+        emailjs.send("portfolio_website","template_fru2gal", emailContent, response.data.EMAILJS_USER_ID)
+        .then(response =>{
+          setResult({success: true, message: 'I got your message and will respond ASAP'});
+          setState({ name: '', email: '', subject: '', message: '' });
+        })
+        .catch(() => {
+          setResult({success: false, message: 'Something went wrong. Please try again later'});
+        });
       })
       .catch(() => {
         setResult({success: false, message: 'Something went wrong. Please try again later'});
       });
-  }
+
+ }
 
   const contactValue = event => {
     const { name, value } = event.target;
