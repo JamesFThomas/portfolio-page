@@ -37,7 +37,7 @@ function Contact() {
     .then(response =>{
         emailjs.send("portfolio_website","template_fru2gal", emailContent, response.data)
         .then(response =>{
-          setResult({success: true, message: 'I got your message and will respond ASAP'});
+          setResult({success: true, message: 'Your message was sent and a response will be sent shortly'});
           setState({ name: '', email: '', subject: '', message: '' });
         })
         .catch(() => {
