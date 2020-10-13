@@ -44,10 +44,9 @@ function Contact() {
           setResult({success: false, message: 'Something went wrong. Please try again later'});
         });
       })
-      .catch((error) => {
-        throw error;
-      });
-
+        .catch((error) => {
+          throw error;
+        });
  }
 
   const contactValue = event => {
