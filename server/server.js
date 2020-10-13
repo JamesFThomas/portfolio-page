@@ -11,11 +11,12 @@ app.use(express.json());
 
 app.use("/", express.static(path.join(__dirname, "../build")));
 
-app.use('*', express.static(path.join(__dirname, "../build/index.html")));
-
 app.get("/env", (req, res)=>{
+  console.log(process.env.EMAILJS_USER_ID)
   res.send(process.env.EMAILJS_USER_ID)
-})
+});
+
+app.use('*', express.static(path.join(__dirname, "../build/index.html")));
 
 app.listen(port, () => {
   console.log(`I am server I listen only on: PORT ${port}`)

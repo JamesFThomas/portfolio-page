@@ -23,18 +23,19 @@ function Contact() {
 
     event.preventDefault();
 
-    const {name, email, subject, message} = state;
-  
-      const emailContent = {
-        subject: subject,
-        name: name,
-        email: email,
-        message: message,
-        }
 
-    axios.get("/env", { ...state })
-      .then(response =>{
-        emailjs.send("portfolio_website","template_fru2gal", emailContent, response.data.EMAILJS_USER_ID)
+    const {name, email, subject, message} = state;
+
+      const emailContent = {
+          subject: subject,
+          name: name,
+          email: email,
+          message: message,
+          }
+
+    axios.get("/env")
+    .then(response =>{
+        emailjs.send("portfolio_website","template_fru2gal", emailContent, response.data)
         .then(response =>{
           setResult({success: true, message: 'I got your message and will respond ASAP'});
           setState({ name: '', email: '', subject: '', message: '' });
@@ -43,8 +44,8 @@ function Contact() {
           setResult({success: false, message: 'Something went wrong. Please try again later'});
         });
       })
-      .catch(() => {
-        setResult({success: false, message: 'Something went wrong. Please try again later'});
+      .catch((error) => {
+        throw error;
       });
 
  }
