@@ -21,7 +21,7 @@ function Portfolio() {
                  developers to host games and have players provide feedback to improve upon the game development process.
                </Card.Text>
                <Card.Text>React.js | Node.js | Express.js | PostgreSQL | Discord API | GameSpot API | Google API </Card.Text>
-              <Button className="port-project1-button" href="http://www.phaserbros.com/" variant="success" >phaserbros.com</Button>
+              <Button className="port-project1-button" href="https://github.com/dontphasemebros/game-app/" variant="success" >phaserbros.com</Button>
             </Card.Body>
           </Card>
         </Col>
