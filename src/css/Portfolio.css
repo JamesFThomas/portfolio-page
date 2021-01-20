@@ -23,8 +23,6 @@
   padding: 20px 10px;
 }
 
-.port-project1-button {}
-
 .port-project2{
   height: 100%;
   background-color: lightslategrey;
@@ -35,5 +33,33 @@
   padding: 20px 10px;
 
 }
+.port-project3{
+  height: 100%;
+  background-color: lightslategrey;
+  border-radius: 15%;
+}
 
-.port-project2-button{}
+.port-project3-image{
+  padding: 20px 10px;
+
+}
+.port-project4{
+  height: 100%;
+  background-color: lightslategrey;
+  border-radius: 15%;
+}
+
+.port-project4-image{
+  padding: 20px 10px;
+
+}
+.port-project5{
+  height: 100%;
+  background-color: lightslategrey;
+  border-radius: 15%;
+}
+
+.port-project5-image{
+  padding: 20px 10px;
+
+}
