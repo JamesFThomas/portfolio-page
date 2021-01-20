@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '..src/assets/JFTResume.pdf';
+import resume from './assets/JFTResume.pdf';
 import "./css/Resume.css"
 
 function Resume() {
