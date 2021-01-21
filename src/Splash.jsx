@@ -6,7 +6,7 @@ import "./css/Splash.css"
 function Splash() {
   const myName = <h1>James F. Thomas</h1>;
   const creds = <h3>B.S., M.S.</h3>
-  const myRoles = 'JavaScript Developer * Martial Artist * Girevik * Horticulturalist'
+  const myRoles = 'Software Developer * Martial Artist * Girevik * Horticulturalist'
   return (
     <div className="splash-container">
       <div className="splash-content">
