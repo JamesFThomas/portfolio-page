@@ -9,7 +9,7 @@ import Portfolio from './Portfolio.jsx';
 import Splash from './Splash.jsx';
 import NavBar from './NavBar.jsx';
 import FooterComp from './Footer.jsx';
-import "./css/App.css"
+// import "./css/App.css"
 
 library.add(fab);
 
